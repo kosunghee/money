@@ -42,7 +42,7 @@
                     <span aria-hidden="true">¡¿</span>
                     <span class="sr-only">Close</span>
                 </button>
-                <strong>Holy guacamole!</strong> It's free.. this is an example theme.
+                <strong>Holy 12guacamole!</strong> It's free.. this is an example theme.
             </div>
 
             <div class="row">
