@@ -65,5 +65,8 @@ public class HomeController {
 	public String sample(Model model){
 		return "/web/Sample.tiles";
 	}
-	
+	@RequestMapping(value="/eventAdd.do",method = RequestMethod.GET)
+	public String eventAdd(Model model){
+		return "/web/CalendarAdd.jsp";
+	}
 }

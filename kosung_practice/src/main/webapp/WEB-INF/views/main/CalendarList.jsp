@@ -10,7 +10,7 @@
 	<script src='http://fullcalendar.io/js/fullcalendar-2.1.1/fullcalendar.min.js'></script>
 	
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" />
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="bootstrap/css/styles.css" />
 	<c:set value="${todayDate }" var="today"/>
@@ -48,6 +48,9 @@
 function datePrev(){
 	
 }
+function eventAdd(){
+	
+}
 </script>
 <style>
 
@@ -79,10 +82,13 @@ function datePrev(){
 		<button type="button" name="todayNext" style="border: white; background: white; font-size:2.8rem; outline: 0;" onclick="dateNext()">
 			<span class="fc-icon fc-icon-right-single-arrow"></span>
 		</button>
+		<button type="button" name="eventAdd" onClick="window.open('/eventAdd.do','','resizable=yes, scrollbars=yes, width=500, height=500')">
+			<span class="glyphicon glyphicon-plus" style="border: white; background: white;font-size:2.8rem; outline: 0;"></span>
+		</button>
 	</div>
 	
 	
-	<table class="table" style="width: 80%; margin: 4rem 5rem 10rem 10rem;">
+	<table class="table" style="margin: 4rem 5rem 10rem 10rem;">
 		<colgroup>
 			<col width="50%">
 			<col width="20%">
@@ -116,7 +122,7 @@ function datePrev(){
 	</table>
 	
     <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
     <script src="bootstrap/js/scripts.js"></script>
 

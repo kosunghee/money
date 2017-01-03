@@ -3,8 +3,8 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" />
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="bootstrap/css/styles.css" />
 </head>
@@ -18,14 +18,13 @@
 			<span class="icon-bar"></span>
 		</button>
 		<a class="navbar-brand" style="padding-top: 1rem" href="/home.do">
-		<i class="glyphicon glyphicon-home"></i>
 		<i class="glyphicon glyphicon-piggy-bank"></i>
 		</a><!-- piggy-bank -->
 	</div>
 	<ul class="nav navbar-top-links navbar-right" style="align:right;">
 		<li class="dropdown">
 			<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #777;">
-				<i class="glyphicon glyphicon-user"></i> <!-- <i class="fa fa-caret-down"></i> -->
+				<i class="glyphicon glyphicon-user"></i>
 			</a>
 			<ul class="dropdown-menu dropdown-user">
 				<li>
@@ -46,7 +45,7 @@
 
 <!-- 파일을 읽는데 오래걸리기 때문에 제일 마지막에 로드하기 위해 가장 마지막에 적는다.-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
     <script src="bootstrap/js/scripts.js"></script>
 </body>
