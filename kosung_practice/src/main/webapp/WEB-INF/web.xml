@@ -64,7 +64,7 @@
 	</servlet-mapping> -->
  	<context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value></param-value>
+        <param-value>classpath*:config/spring/context-*.xml</param-value>
     </context-param>
 	
 

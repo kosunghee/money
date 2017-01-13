@@ -5,6 +5,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.jasper.tagplugins.jstl.core.Param;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -61,12 +64,15 @@ public class HomeController {
 	public String setting(Model model){
 		return "web/Setting.tiles";
 	}
-	@RequestMapping(value="/sample.do", method = RequestMethod.GET)
-	public String sample(Model model){
-		return "/web/Sample.tiles";
-	}
 	@RequestMapping(value="/eventAdd.do",method = RequestMethod.GET)
-	public String eventAdd(Model model){
+	public String eventAdd(Model model, HttpServletRequest request){
+		model.addAttribute("selectDate",request.getAttribute("selectDate"));
 		return "/web/CalendarAdd.jsp";
 	}
+	@RequestMapping(value="/sample.do", method = RequestMethod.GET)
+	public String sample(Model model){
+//		return "/web/Sample.tiles";
+		return "/web/index.jsp";
+	}
+
 }

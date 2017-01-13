@@ -3,17 +3,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<link href='http://fullcalendar.io/js/fullcalendar-2.1.1/fullcalendar.css' rel='stylesheet' />
-	<link href='http://fullcalendar.io/js/fullcalendar-2.1.1/fullcalendar.print.css' media='print' />
-	<script src='http://fullcalendar.io/js/fullcalendar-2.1.1/lib/moment.min.js'></script>
-	<script src='http://fullcalendar.io/js/fullcalendar-2.1.1/lib/jquery.min.js'></script>
-	<script src='http://fullcalendar.io/js/fullcalendar-2.1.1/fullcalendar.min.js'></script>
-	
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="bootstrap/css/styles.css" />
-	<c:set value="${todayDate }" var="today"/>
+<link href='http://fullcalendar.io/js/fullcalendar-2.1.1/fullcalendar.css' rel='stylesheet' />
+<link href='http://fullcalendar.io/js/fullcalendar-2.1.1/fullcalendar.print.css' media='print' />
+<script src='http://fullcalendar.io/js/fullcalendar-2.1.1/lib/moment.min.js'></script>
+<script src='http://fullcalendar.io/js/fullcalendar-2.1.1/lib/jquery.min.js'></script>
+<script src='http://fullcalendar.io/js/fullcalendar-2.1.1/fullcalendar.min.js'></script>
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="bootstrap/css/styles.css" />
+<c:set value="${todayDate }" var="today"/>
 <script>
 
 	$(document).ready(function() {
@@ -82,7 +82,7 @@ function eventAdd(){
 		<button type="button" name="todayNext" style="border: white; background: white; font-size:2.8rem; outline: 0;" onclick="dateNext()">
 			<span class="fc-icon fc-icon-right-single-arrow"></span>
 		</button>
-		<button type="button" name="eventAdd" onClick="window.open('/eventAdd.do','','resizable=yes, scrollbars=yes, width=500, height=500')">
+		<button type="button" name="eventAdd" onClick="window.open('/eventAdd.do?' + 'selectDate=20150102','','resizable=yes, scrollbars=yes, width=500, height=500')">
 			<span class="glyphicon glyphicon-plus" style="border: white; background: white;font-size:2.8rem; outline: 0;"></span>
 		</button>
 	</div>

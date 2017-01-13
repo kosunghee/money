@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bean class="org.springframework.jdbc.datasource.SimpleDriverDataSource" id="dataSource">
+	<property value="org.mariadb.jdbc.Driver" name="driverClass"/>
+	<property value="jdbc:mariadb://localhost:5306"
+</bean>
